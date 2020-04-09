@@ -1,0 +1,7 @@
+stm32g0xx_it.c:73:6:NMI_Handler	8	static
+stm32g0xx_it.c:86:6:HardFault_Handler	8	static
+stm32g0xx_it.c:101:6:SVC_Handler	8	static
+stm32g0xx_it.c:114:6:PendSV_Handler	8	static
+stm32g0xx_it.c:134:6:DMA1_Channel1_IRQHandler	8	static
+stm32g0xx_it.c:148:6:TIM3_IRQHandler	8	static
+stm32g0xx_it.c:162:6:USART2_IRQHandler	8	static

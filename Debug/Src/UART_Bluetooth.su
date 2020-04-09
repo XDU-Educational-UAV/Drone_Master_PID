@@ -1,0 +1,5 @@
+UART_Bluetooth.c:29:13:Bluetooth_Analyse	16	static
+UART_Bluetooth.c:95:6:Send_Data_Back	8	static
+UART_Bluetooth.c:113:6:Bluetooth_Send_TX	16	static
+UART_Bluetooth.c:122:6:HAL_UART_RxCpltCallback	16	static
+UART_Bluetooth.c:132:6:Bluetooth_Connect	16	static

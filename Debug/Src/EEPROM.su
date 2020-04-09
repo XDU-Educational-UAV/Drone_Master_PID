@@ -1,0 +1,9 @@
+EEPROM.c:60:10:InitCurrWrAddress	24	static
+EEPROM.c:113:10:__EE_Init	32	static
+EEPROM.c:324:10:EE_Init	24	static
+EEPROM.c:344:10:EE_ReadVariable	40	static
+EEPROM.c:404:10:EE_WriteVariable	32	static
+EEPROM.c:428:26:EE_Format	24	static
+EEPROM.c:468:17:EE_FindValidPage	24	static
+EEPROM.c:540:17:EE_VerifyPageFullWriteVariable	48	static
+EEPROM.c:605:17:EE_PageTransfer	48	static

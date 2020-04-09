@@ -1,0 +1,5 @@
+Tasks.c:22:6:BSP_Int	8	static
+Tasks.c:42:6:Task_1000HZ	40	static
+Tasks.c:61:6:Task_500HZ	8	static
+Tasks.c:70:6:Task_250HZ	8	static
+Tasks.c:80:6:Task_10HZ	8	static

@@ -1,0 +1,4 @@
+Control.c:18:6:RC_Limit	16	static
+Control.c:40:6:RC_LOCK	8	static
+Control.c:98:6:Control_Angle	24	static
+Control.c:161:6:Control_Gyro	40	static

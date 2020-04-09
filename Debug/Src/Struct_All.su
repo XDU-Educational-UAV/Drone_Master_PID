@@ -1,0 +1,8 @@
+Struct_All.c:39:6:PID_Reset	8	static
+Struct_All.c:99:6:EEPROM_INIT	16	static,ignoring_inline_asm
+Struct_All.c:116:6:EEPROM_SAVE_ACC_OFFSET	16	static,ignoring_inline_asm
+Struct_All.c:124:6:EEPROM_READ_ACC_OFFSET	8	static
+Struct_All.c:133:6:EEPROM_SAVE_GYRO_OFFSET	16	static,ignoring_inline_asm
+Struct_All.c:141:6:EEPROM_READ_GYRO_OFFSET	8	static
+Struct_All.c:150:6:EEPROM_SAVE_PID	16	static,ignoring_inline_asm
+Struct_All.c:175:6:EEPROM_READ_PID	8	static

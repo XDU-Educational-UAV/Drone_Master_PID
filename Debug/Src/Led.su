@@ -1,0 +1,5 @@
+Led.c:14:6:Delay_led	24	static
+Led.c:25:6:LED_ON	8	static
+Led.c:37:6:LED_OFF	8	static
+Led.c:49:6:LED_ON_OFF	16	static
+Led.c:73:6:LED_ON_Frequency	24	static

@@ -1,0 +1,5 @@
+adc.c:35:6:MX_ADC1_Init	48	static
+adc.c:84:6:HAL_ADC_MspInit	48	static
+adc.c:129:6:HAL_ADC_MspDeInit	16	static
+adc.c:154:6:ADC1_Init	8	static
+adc.c:162:6:Voltage_Printf	16	static

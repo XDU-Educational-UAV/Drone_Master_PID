@@ -1,0 +1,81 @@
+
+CubeMX_Code.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .isr_vector   00000000  08000000  08000000  00010068  2**0
+                  CONTENTS
+  1 .text         00000060  08000000  08000000  00010000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rodata       00000000  08000060  08000068  00010068  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .ARM.extab    00000000  08000060  08000060  00010068  2**0
+                  CONTENTS
+  4 .ARM          00000000  08000060  08000060  00010068  2**0
+                  CONTENTS
+  5 .preinit_array 00000000  08000060  08000068  00010068  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  6 .init_array   00000004  08000060  08000060  00010060  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  7 .fini_array   00000004  08000064  08000064  00010064  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  8 .data         00000000  20000000  20000000  00010068  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  9 .bss          0000001c  20000000  08000068  00020000  2**2
+                  ALLOC
+ 10 ._user_heap_stack 00000604  2000001c  08000068  0002001c  2**0
+                  ALLOC
+ 11 .ARM.attributes 00000028  00000000  00000000  00010068  2**0
+                  CONTENTS, READONLY
+
+Disassembly of section .text:
+
+08000000 <__do_global_dtors_aux>:
+ 8000000:	b510      	push	{r4, lr}
+ 8000002:	4c06      	ldr	r4, [pc, #24]	; (800001c <__do_global_dtors_aux+0x1c>)
+ 8000004:	7823      	ldrb	r3, [r4, #0]
+ 8000006:	2b00      	cmp	r3, #0
+ 8000008:	d107      	bne.n	800001a <__do_global_dtors_aux+0x1a>
+ 800000a:	4b05      	ldr	r3, [pc, #20]	; (8000020 <__do_global_dtors_aux+0x20>)
+ 800000c:	2b00      	cmp	r3, #0
+ 800000e:	d002      	beq.n	8000016 <__do_global_dtors_aux+0x16>
+ 8000010:	4804      	ldr	r0, [pc, #16]	; (8000024 <__do_global_dtors_aux+0x24>)
+ 8000012:	e000      	b.n	8000016 <__do_global_dtors_aux+0x16>
+ 8000014:	bf00      	nop
+ 8000016:	2301      	movs	r3, #1
+ 8000018:	7023      	strb	r3, [r4, #0]
+ 800001a:	bd10      	pop	{r4, pc}
+ 800001c:	20000000 	.word	0x20000000
+ 8000020:	00000000 	.word	0x00000000
+ 8000024:	08000048 	.word	0x08000048
+
+08000028 <frame_dummy>:
+ 8000028:	4b04      	ldr	r3, [pc, #16]	; (800003c <frame_dummy+0x14>)
+ 800002a:	b510      	push	{r4, lr}
+ 800002c:	2b00      	cmp	r3, #0
+ 800002e:	d003      	beq.n	8000038 <frame_dummy+0x10>
+ 8000030:	4903      	ldr	r1, [pc, #12]	; (8000040 <frame_dummy+0x18>)
+ 8000032:	4804      	ldr	r0, [pc, #16]	; (8000044 <frame_dummy+0x1c>)
+ 8000034:	e000      	b.n	8000038 <frame_dummy+0x10>
+ 8000036:	bf00      	nop
+ 8000038:	bd10      	pop	{r4, pc}
+ 800003a:	46c0      	nop			; (mov r8, r8)
+ 800003c:	00000000 	.word	0x00000000
+ 8000040:	20000004 	.word	0x20000004
+ 8000044:	08000048 	.word	0x08000048
+
+08000048 <_init>:
+ 8000048:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+ 800004a:	46c0      	nop			; (mov r8, r8)
+ 800004c:	bcf8      	pop	{r3, r4, r5, r6, r7}
+ 800004e:	bc08      	pop	{r3}
+ 8000050:	469e      	mov	lr, r3
+ 8000052:	4770      	bx	lr
+
+08000054 <_fini>:
+ 8000054:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+ 8000056:	46c0      	nop			; (mov r8, r8)
+ 8000058:	bcf8      	pop	{r3, r4, r5, r6, r7}
+ 800005a:	bc08      	pop	{r3}
+ 800005c:	469e      	mov	lr, r3
+ 800005e:	4770      	bx	lr

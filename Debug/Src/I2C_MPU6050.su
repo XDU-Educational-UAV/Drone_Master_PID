@@ -1,0 +1,17 @@
+I2C_MPU6050.c:39:13:I2C_delay	16	static
+I2C_MPU6050.c:50:16:I2C_Start	8	static
+I2C_MPU6050.c:70:13:I2C_Stop	8	static
+I2C_MPU6050.c:82:13:I2C_ACK	8	static
+I2C_MPU6050.c:97:13:I2C_NACK	8	static
+I2C_MPU6050.c:113:16:I2C_WaitAck	8	static
+I2C_MPU6050.c:132:13:I2C_WriteByte	24	static
+I2C_MPU6050.c:154:16:I2C_ReadByte	16	static
+I2C_MPU6050.c:178:16:Single_WriteI2C	16	static
+I2C_MPU6050.c:200:16:Single_ReadI2C	32	static
+I2C_MPU6050.c:231:9:MPU6050_SequenceRead	24	static
+I2C_MPU6050.c:266:6:MPU6050_SingleRead	8	static
+I2C_MPU6050.c:287:9:InitMPU6050	8	static
+I2C_MPU6050.c:313:6:Do_ACC_Offset	8	static
+I2C_MPU6050.c:322:6:Do_GYRO_Offset	8	static
+I2C_MPU6050.c:331:6:MPU6050_Offset	8	static
+I2C_MPU6050.c:407:6:MPU6050_Compose	8	static
