@@ -428,6 +428,11 @@
               <FilePath>..\Src\Filter.c</FilePath>
             </File>
             <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/adc.c</FilePath>
+            </File>
+            <File>
               <FileName>IMU.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\IMU.c</FilePath>
@@ -466,11 +471,6 @@
               <FileName>gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/gpio.c</FilePath>
-            </File>
-            <File>
-              <FileName>adc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Src/adc.c</FilePath>
             </File>
             <File>
               <FileName>dma.c</FileName>

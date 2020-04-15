@@ -142,3 +142,12 @@ void Print_MSP_FLY_DATA(void)
 
 	Bluetooth_Send_TX(data, 32);
 }
+
+/***********************
+建立DMA接收通道,从地面站/遥控器接收数据
+**********************/
+
+/*void Protocol_Init(void)
+{
+	HAL_UART_Receive_DMA(&huart2,&RxData,1);
+}*/

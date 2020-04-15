@@ -36,6 +36,8 @@ extern ADC_HandleTypeDef hadc1;
 #define M 1
 extern uint32_t ADC_Value;
 extern int16_t Battery_Fly;
+#define ADC_Convert() HAL_ADC_Start_DMA(&hadc1,&ADC_Value,1)
+
 /* USER CODE END Private defines */
 
 void MX_ADC1_Init(void);

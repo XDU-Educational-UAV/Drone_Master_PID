@@ -6,6 +6,7 @@
 	联系邮箱：2436559745@qq.com
 */
 #include "IMU.h"
+#include "adc.h"
 #include "Tasks.h"
 #include "Maths.h"
 #include "Filter.h"
@@ -19,11 +20,11 @@ uint8_t Bsp_Int_Ok = 0;
 函数原型：	void BSP_Int(void)
 功    能：	硬件驱动初始化
 *******************************************************************************/ 
-void BSP_Int(void)
+	void BSP_Int(void)
 {
 	LED_ON_OFF();//LED闪烁
 	TIM_Init();//TIM1四个通道的PWM初始化
-	ADC1_Init();//ADC及DMA初始化
+	//ADC及DMA初始化
 	//这里加入蓝牙串口通讯
 	
 	while( InitMPU6050()!=1 );//若MPU6050初始化不成功，则程序不向下运行
@@ -80,4 +81,5 @@ void Task_250HZ(void)
 void Task_10HZ(void)
 {
 	FailSafe();//异常保护
+	ADC_Convert();//ADC check
 }

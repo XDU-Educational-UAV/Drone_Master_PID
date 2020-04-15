@@ -24,7 +24,7 @@
 #include "struct_all.h"
 
 static uint16_t Battery;//锟斤拷前锟斤拷氐锟窖癸拷锟?00锟斤拷
-uint32_t ADC_Value;	//锟斤拷锟紸DC转锟斤拷锟斤拷锟斤拷锟斤拷12bit原始锟斤拷锟斤拷
+uint32_t ADC_Value;	//存放ADC转换得到的原始数据变量
 int16_t Battery_Fly;
 /* USER CODE END 0 */
 
@@ -151,10 +151,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 } 
 
 /* USER CODE BEGIN 1 */
-void ADC1_Init(void)
-{
-	HAL_ADC_Start_DMA(&hadc1, &ADC_Value, M);
-}
+
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* AdcHandle)
 {
 	ADC_Value=ADC_Value*330/4096-3;
@@ -163,13 +160,13 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* AdcHandle)
 锟斤拷锟斤拷原锟酵ｏ拷	void Voltage_Printf(void)
 锟斤拷    锟杰ｏ拷	锟斤拷锟斤拷锟角帮拷锟截碉拷压值一锟劫憋拷
 *******************************************************************************/ 
-void Voltage_Printf(void)
+/*void Voltage_Printf(void)
 {
 	Battery = (uint16_t)(ADC_Value*330/4096-3);
-	/*PrintString("\r\n锟斤拷前锟斤拷氐锟窖怪狄伙拷俦锟斤拷锟?");
+	PrintString("\r\n锟斤拷前锟斤拷氐锟窖怪狄伙拷俦锟斤拷锟?");
 	PrintU16(Battery); 
-	PrintString("V");*/
-}
+	PrintString("V");
+}*/
 /* USER CODE END 1 */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
