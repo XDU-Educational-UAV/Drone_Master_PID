@@ -1,3 +1,9 @@
+# 西电航协微型四轴PID版本代码
+
+## Status
+
+![stars](https://img.shields.io/github/stars/uav-operation-system/Drone_Master_PID.svg) ![forks](https://img.shields.io/github/forks/uav-operation-system/Drone_Master_PID.svg) ![tag](https://img.shields.io/github/tag/uav-operation-system/Drone_Master_PID.svg) ![release](https://img.shields.io/github/release/uav-operation-system/Drone_Master_PID.svg) ![issues](https://img.shields.io/github/issues/uav-operation-system/Drone_Master_PID.svg)
+
 ## Overview
 
 This is the source code of flight control terminal for XDU Aero Association micro quadcopter.
@@ -11,8 +17,6 @@ At present, the project is in the stage of to be completed. Non producers should
 When modifying the code, please create a new feature branch under the master branch, modify the code under the feature branch, and then perform the pull request operation through the branch. Confirm and merge to the main branch.
 
 For bug related and suggestions, please move to the issue column
-
-By phillweston, Hangning Zhang, Dian Zhao
 
 ## 概要说明
 
@@ -34,11 +38,16 @@ bug相关和建议请移步至issue栏目
 
 串口接收部分写在主循环中频率为1000Hx的Task函数中，串口内容解析在Connect函数中调用。
 
-## 作者名单
+## 项目进度
 
-作者：Phillweston, Hangning Zhang, Dian Zhao
+|Tag|功能|完成日期|
+|:-:|:-:|:-:|
+|0.1.0|移植烈火四轴源码到CubeMX框架上|2020.02.28|
+|0.1.1|代码编译调试，消除警告与错误|2020.03.31|
+|0.1.2|实现与APP的通信|2020.05.01|
+|0.1.3|添加额外功能（无头模式、故障保护）|待定|
 
-## 微型四轴飞行器外形:
+## 微型四轴飞行器外形
 
          HEAD
 	  M4  ↑  M1
@@ -57,7 +66,13 @@ bug相关和建议请移步至issue栏目
 
 	  M3     M2
 	
-## 硬件资源:
+## 电机和桨安装顺序
+
+白色的线连接到板子的正极输出，黑色的线连接到板子的负极输出
+
+M1和M3为逆时针旋转，M2和M4为顺时针旋转
+
+## 硬件资源
 
 ![image](https://github.com/uav-operation-system/Drone_Master/raw/master/chip.png)
 
@@ -82,3 +97,7 @@ bug相关和建议请移步至issue栏目
 	10.MOTOR3对应的绿色LED，连接在PC8上，高电平有效
 
 	11.MOTOR4对应的绿色LED，连接在PB9上，高电平有效
+
+## 作者名单
+
+作者：Phillweston, Hangning Zhang, Dian Zhao
