@@ -70,7 +70,7 @@ bug相关和建议请移步至issue栏目
 
 请按照图示顺序正确安装飞控板方向以及电机线序：（注意：**安装错误的方向可能导致飞行器出现严重故障**）
 
-![chip3d](https://github.com/uav-operation-system/Drone_Master/raw/master/chip3d.png)
+![chip3d](https://github.com/uav-operation-system/Drone_Master_PID/raw/master/chip3d.png)
 
 桨叶颜色与电机线序：
 
@@ -85,7 +85,7 @@ M1和M3为逆时针旋转，M2和M4为顺时针旋转
 
 ## 硬件资源
 
-![chip](https://github.com/uav-operation-system/Drone_Master/raw/master/chip.png)
+![chip](https://github.com/uav-operation-system/Drone_Master_PID/raw/master/chip.png)
 
 	1.MCU:STM32G030K8T6 (FLASH:512K, RAM:128K, 系统运行时钟频率:96MHz)
 
