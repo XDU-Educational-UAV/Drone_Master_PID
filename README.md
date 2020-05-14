@@ -1,5 +1,7 @@
 # 西电航协微型四轴PID版本代码
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/677411ebae7c4a25a40263f6fc33ee4c)](https://app.codacy.com/gh/uav-operation-system/Drone_Master_PID?utm_source=github.com&utm_medium=referral&utm_content=uav-operation-system/Drone_Master_PID&utm_campaign=Badge_Grade_Dashboard)
+
 ## Status
 
 ![stars](https://img.shields.io/github/stars/uav-operation-system/Drone_Master_PID.svg) ![forks](https://img.shields.io/github/forks/uav-operation-system/Drone_Master_PID.svg) ![tag](https://img.shields.io/github/tag/uav-operation-system/Drone_Master_PID.svg) ![release](https://img.shields.io/github/release/uav-operation-system/Drone_Master_PID.svg) ![issues](https://img.shields.io/github/issues/uav-operation-system/Drone_Master_PID.svg)
