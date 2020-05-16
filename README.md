@@ -1,5 +1,7 @@
 # 西电航协微型四轴PID版本代码
 
+![logo](https://github.com/uav-operation-system/Drone_Master_PID/raw/master/logo.jpg)
+
 ## Status
 
 ![stars](https://img.shields.io/github/stars/uav-operation-system/Drone_Master_PID.svg) ![forks](https://img.shields.io/github/forks/uav-operation-system/Drone_Master_PID.svg) ![tag](https://img.shields.io/github/tag/uav-operation-system/Drone_Master_PID.svg) ![release](https://img.shields.io/github/release/uav-operation-system/Drone_Master_PID.svg) ![issues](https://img.shields.io/github/issues/uav-operation-system/Drone_Master_PID.svg)
@@ -50,7 +52,7 @@ bug相关和建议请移步至issue栏目
 ## 微型四轴飞行器外形
 
          HEAD
-	  M4  ↑  M1
+	  M2  ↑  M3
 
 	   \     /
 
@@ -64,7 +66,7 @@ bug相关和建议请移步至issue栏目
 
 	   /     \
 
-	  M3     M2
+	  M1     M4
 	
 ## 电机和桨安装顺序
 
@@ -83,31 +85,53 @@ bug相关和建议请移步至issue栏目
 
 M1和M3为逆时针旋转，M2和M4为顺时针旋转
 
+## 上锁和解锁方法
+
+左手油门手的摇杆打向左下角，右手摇杆不动，上锁
+
+左手油门手的摇杆打向右下角，右手摇杆不动，解锁
+
+（Beta：未来可以使用APP上面的解锁/上锁按钮来进行解锁/上锁）
+
+## 陀螺仪和加速度计校准方法
+
+左手油门手的摇杆打向左下角，右手摇杆俯仰方向拉到最低，校正陀螺仪
+
+左手油门手的摇杆打向左下角，右手摇杆俯仰方向拉到最低，校正加速度计
+
+（Beta：未来可以使用APP上面的校正陀螺仪/加速度计按钮来进行校正陀螺仪/加速度计）
+
 ## 硬件资源
 
 ![chip](https://github.com/uav-operation-system/Drone_Master_PID/raw/master/chip.png)
 
-	1.MCU:STM32G030K8T6 (FLASH:512K, RAM:128K, 系统运行时钟频率:96MHz)
+### MCU和传感器模块接口
 
-	2.6轴MPU6050连接在IIC1上(IMU_SCL:PB8, IMU_SDA:PB7, 通信方式:模拟IIC)
+- MCU:STM32G030K8T6 (FLASH:512K, RAM:128K, 系统运行时钟频率:96MHz)
 
-	3.蓝牙无线通信NFR51822连接在UART1上(RXD:PA3, TXD:PA2, NRF_FLOW_CTRL:PA4)
+- 6轴MPU6050连接在IIC1上(IMU_SCL:PB8, IMU_SDA:PB7, 通信方式:模拟IIC)
 
-	4.MOTOR1连接在TIM4_CH2上(PB6)
+- 蓝牙无线通信NFR51822连接在UART1上(RXD:PA3, TXD:PA2, NRF_FLOW_CTRL:PA4)
 
-	5.MOTOR2连接在TIM4_CH1上(PB3)
+### 空心杯电机接口
 
-	6.MOTOR3连接在TIM2_CH3上(PA9/PA11)
+- MOTOR1连接在TIM4_CH2上(PB6)
 
-	7.MOTOR4连接在TIM2_CH1上(PB8)
+- MOTOR2连接在TIM4_CH1上(PB3)
 
-	8.MOTOR1对应的绿色LED，连接在PB5上，高电平有效
+- MOTOR3连接在TIM2_CH3上(PA9/PA11)
 
-	9.MOTOR2对应的绿色LED，连接在PB4上，高电平有效
+- MOTOR4连接在TIM2_CH1上(PB8)
 
-	10.MOTOR3对应的绿色LED，连接在PC8上，高电平有效
+### 空心杯电机与对应的LED接口
 
-	11.MOTOR4对应的绿色LED，连接在PB9上，高电平有效
+- MOTOR1对应的绿色LED，连接在PB5上，高电平有效
+
+- MOTOR2对应的绿色LED，连接在PB4上，高电平有效
+
+- MOTOR3对应的绿色LED，连接在PC8上，高电平有效
+
+- MOTOR4对应的绿色LED，连接在PB9上，高电平有效
 
 ## 作者名单
 
