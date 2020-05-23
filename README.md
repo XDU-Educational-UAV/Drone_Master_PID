@@ -1,12 +1,12 @@
 # 西电航协微型四轴PID版本代码
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/677411ebae7c4a25a40263f6fc33ee4c)](https://app.codacy.com/gh/uav-operation-system/Drone_Master_PID?utm_source=github.com&utm_medium=referral&utm_content=uav-operation-system/Drone_Master_PID&utm_campaign=Badge_Grade_Dashboard)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/677411ebae7c4a25a40263f6fc33ee4c)](https://app.codacy.com/gh/xdu-aero-association/Drone_Master_PID?utm_source=github.com&utm_medium=referral&utm_content=xdu-aero-association/Drone_Master_PID&utm_campaign=Badge_Grade_Dashboard)
 
-![logo](https://github.com/uav-operation-system/Drone_Master_PID/raw/master/logo.jpg)
+![logo](./logo.jpg)
 
 ## Status
 
-![stars](https://img.shields.io/github/stars/uav-operation-system/Drone_Master_PID.svg) ![forks](https://img.shields.io/github/forks/uav-operation-system/Drone_Master_PID.svg) ![tag](https://img.shields.io/github/tag/uav-operation-system/Drone_Master_PID.svg) ![release](https://img.shields.io/github/release/uav-operation-system/Drone_Master_PID.svg) ![issues](https://img.shields.io/github/issues/uav-operation-system/Drone_Master_PID.svg)
+![stars](https://img.shields.io/github/stars/xdu-aero-association/Drone_Master_PID.svg) ![forks](https://img.shields.io/github/forks/xdu-aero-association/Drone_Master_PID.svg) ![tag](https://img.shields.io/github/tag/xdu-aero-association/Drone_Master_PID.svg) ![release](https://img.shields.io/github/release/xdu-aero-association/Drone_Master_PID.svg) ![issues](https://img.shields.io/github/issues/xdu-aero-association/Drone_Master_PID.svg)
 
 ## Overview
 
@@ -74,7 +74,7 @@ bug相关和建议请移步至issue栏目
 
 请按照图示顺序正确安装飞控板方向以及电机线序：（注意：**安装错误的方向可能导致飞行器出现严重故障**）
 
-![chip3d](https://github.com/uav-operation-system/Drone_Master_PID/raw/master/chip3d.png)
+![chip3d](./chip3d.png)
 
 桨叶颜色与电机线序：
 
@@ -105,7 +105,7 @@ M1和M3为逆时针旋转，M2和M4为顺时针旋转
 
 ## 硬件资源
 
-![chip](https://github.com/uav-operation-system/Drone_Master_PID/raw/master/chip.png)
+![chip](./chip.png)
 
 ### MCU和传感器模块接口
 
